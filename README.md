@@ -1,1 +1,3 @@
-<h1 align="center"> AWCreate </h1>
+<h1 align="center"> AWMusic </h1>
+
+# a cool music app :)
