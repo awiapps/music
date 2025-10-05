@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "create",
-    "slug": "create",
+    "name": "awmusic",
+    "slug": "awmusic",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "create",
+    "scheme": "awmusic",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
