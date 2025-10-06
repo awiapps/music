@@ -1,0 +1,20 @@
+{
+  "name": "awmusic-monorepo",
+  "version": "0.0.0",
+  "description": "monoreo for awmusic",
+  "main": "null",
+  "scripts": {
+    "commit": "superclaude commit --interactive",
+    "release:prep": "superclaude changelog && superclaude readme",
+    "code:review": "superclaude review --verbose",
+    "docs:update": "superclaude docs"
+  },
+  "keywords": [],
+  "author": {
+    "name": "awfixer",
+    "email": "awfixer@awfixer.me",
+    "url": "https://theautist.me"
+  },
+  "license": "AWSOURCE",
+  "packageManager": "pnpm@10.9.0"
+}
