@@ -1,6 +1,204 @@
 version: 2
 updates:
+  # Root workspace npm dependencies
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "npm"
+    commit-message:
+      prefix: "chore(deps)"
+      include: "scope"
+    assignees:
+      - "awfixer"
+    allow:
+      - dependency-type: "all"
+    groups:
+      expo-sdk:
+        patterns:
+          - "expo*"
+          - "@expo/*"
+      react-native:
+        patterns:
+          - "react-native*"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+      testing:
+        patterns:
+          - "@testing-library/*"
+          - "jest*"
+          - "@types/jest"
+      typescript:
+        patterns:
+          - "typescript"
+          - "@typescript-eslint/*"
+          - "eslint*"
+
+  # Mobile package (React Native/Expo)
+  - package-ecosystem: "npm"
+    directory: "/packages/mobile"
+    schedule:
+      interval: "daily"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "mobile"
+    commit-message:
+      prefix: "chore(deps-mobile)"
+    reviewers:
+      - "awfixer"
+    groups:
+      expo-mobile:
+        patterns:
+          - "expo*"
+          - "@expo/*"
+
+  # Desktop package (Tauri)
+  - package-ecosystem: "npm"
+    directory: "/packages/desktop"
+    schedule:
+      interval: "daily"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "desktop"
+    commit-message:
+      prefix: "chore(deps-desktop)"
+    reviewers:
+      - "awfixer"
+
+  # Website package (Astro)
+  - package-ecosystem: "npm"
+    directory: "/packages/website"
+    schedule:
+      interval: "daily"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "website"
+    commit-message:
+      prefix: "chore(deps-website)"
+    reviewers:
+      - "awfixer"
+    groups:
+      astro:
+        patterns:
+          - "astro*"
+          - "@astrojs/*"
+
+  # API package
+  - package-ecosystem: "npm"
+    directory: "/packages/api"
+    schedule:
+      interval: "daily"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "api"
+    commit-message:
+      prefix: "chore(deps-api)"
+    reviewers:
+      - "awfixer"
+
+  # Shared package
+  - package-ecosystem: "npm"
+    directory: "/packages/shared"
+    schedule:
+      interval: "daily"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "shared"
+    commit-message:
+      prefix: "chore(deps-shared)"
+    reviewers:
+      - "awfixer"
+
+  # Cargo dependencies for Tauri backend
+  - package-ecosystem: "cargo"
+    directory: "/packages/desktop/src-tauri"
+    schedule:
+      interval: "daily"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "rust"
+      - "tauri"
+    commit-message:
+      prefix: "chore(deps-rust)"
+    reviewers:
+      - "awfixer"
+    groups:
+      tauri:
+        patterns:
+          - "tauri*"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "chore(deps-actions)"
+    reviewers:
+      - "awfixer"
+
+  # Docker (if you add Dockerfiles later)
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "docker"
+    commit-message:
+      prefix: "chore(deps-docker)"
+    reviewers:
+      - "awfixer"
+
+  # Python dependencies for scripts
+  - package-ecosystem: "pip"
+    directory: "/scripts"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "03:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "python"
+    commit-message:
+      prefix: "chore(deps-python)"
+    reviewers:
+      - "awfixer"
