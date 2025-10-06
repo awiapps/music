@@ -1,20 +1,42 @@
 {
   "name": "awmusic-monorepo",
   "version": "0.0.0",
-  "description": "monoreo for awmusic",
-  "main": "null",
+  "description": "Privacy-focused cross-platform music application",
+  "private": true,
   "scripts": {
+    "dev:mobile": "pnpm --filter @awmusic/mobile dev",
+    "dev:desktop": "pnpm --filter @awmusic/desktop dev",
+    "dev:website": "pnpm --filter @awmusic/website dev",
+    "dev:api": "pnpm --filter @awmusic/api dev",
+    "build:mobile": "pnpm --filter @awmusic/mobile build",
+    "build:desktop": "pnpm --filter @awmusic/desktop build",
+    "build:website": "pnpm --filter @awmusic/website build",
+    "build:api": "pnpm --filter @awmusic/api build",
+    "build:all": "pnpm -r build",
+    "type-check": "pnpm -r type-check",
+    "lint": "pnpm --filter @awmusic/mobile lint",
     "commit": "superclaude commit --interactive",
     "release:prep": "superclaude changelog && superclaude readme",
     "code:review": "superclaude review --verbose",
     "docs:update": "superclaude docs"
   },
-  "keywords": [],
+  "keywords": [
+    "music",
+    "privacy",
+    "react-native",
+    "expo",
+    "tauri",
+    "astro"
+  ],
   "author": {
     "name": "awfixer",
     "email": "awfixer@awfixer.me",
     "url": "https://theautist.me"
   },
   "license": "AWSOURCE",
-  "packageManager": "pnpm@10.9.0"
+  "packageManager": "pnpm@10.9.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  }
 }

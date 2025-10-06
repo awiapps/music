@@ -1,5 +1,5 @@
 {
-  "name": "awmusic-website",
+  "name": "@awmusic/website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
