@@ -13,7 +13,7 @@
     "git@latest",
     "gh@latest",
     "mdbook@latest",
-    "python312@latest",
+    "python312@3.12.11",
     "gcc@latest",
     "gnumake@latest",
     "pkg-config@latest"
