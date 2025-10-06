@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/main/.schema/devbox.schema.json",
+  "packages": [
+    "nodejs@20",
+    "pnpm@latest",
+    "yarn@latest",
+    "go@latest",
+    "gopls@latest",
+    "elixir@latest",
+    "gleam@latest",
+    "erlang@latest",
+    "rebar3@latest",
+    "git@latest",
+    "gh@latest",
+    "mdbook@latest",
+    "python312@latest",
+    "gcc@latest",
+    "gnumake@latest",
+    "pkg-config@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo '🎵 AWMusic Development Environment'",
+      "echo ''",
+      "echo 'Available languages:'",
+      "echo '  Node.js: '$(node --version)",
+      "echo '  pnpm:    '$(pnpm --version)",
+      "echo '  Go:      '$(go version | cut -d' ' -f3)",
+      "echo '  Elixir:  '$(elixir --version | grep Elixir | cut -d' ' -f2)",
+      "echo '  Gleam:   '$(gleam --version)",
+      "echo '  Python:  '$(python3 --version | cut -d' ' -f2)",
+      "echo '  mdBook:  '$(mdbook --version | cut -d' ' -f2)",
+      "echo ''",
+      "echo 'Project structure:'",
+      "echo '  packages/mobile/   - React Native (Expo)'",
+      "echo '  packages/desktop/  - Tauri desktop app'",
+      "echo '  packages/website/  - Astro marketing site'",
+      "echo '  packages/api/      - Backend API (Node.js/Go/Elixir/Gleam)'",
+      "echo '  packages/shared/   - Shared TypeScript types'",
+      "echo ''",
+      "echo 'Quick commands:'",
+      "echo '  pnpm install       - Install all dependencies'",
+      "echo '  pnpm dev:mobile    - Start mobile dev server'",
+      "echo '  pnpm dev:api       - Start API server'",
+      "echo '  pnpm docs:gen      - Generate documentation'",
+      "echo '  pnpm docs:serve    - Serve documentation locally'",
+      "echo '  pnpm clean         - Remove node_modules and lock files'",
+      "echo '  pnpm fresh         - Clean and reinstall'",
+      "echo ''"
+    ],
+    "scripts": {
+      "install": [
+        "pnpm install"
+      ],
+      "dev:mobile": [
+        "pnpm dev:mobile"
+      ],
+      "dev:desktop": [
+        "pnpm dev:desktop"
+      ],
+      "dev:website": [
+        "pnpm dev:website"
+      ],
+      "dev:api": [
+        "pnpm dev:api"
+      ],
+      "docs:gen": [
+        "python3 scripts/docs.py docs"
+      ],
+      "docs:serve": [
+        "pnpm docs:serve"
+      ],
+      "test": [
+        "pnpm test"
+      ],
+      "clean": [
+        "pnpm clean"
+      ],
+      "fresh": [
+        "pnpm fresh"
+      ]
+    }
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

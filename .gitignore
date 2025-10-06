@@ -1,29 +1,69 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # Dependencies
-node_modules/
-**/node_modules/
+node_modules
+.pnp
+.pnp.js
 
-# Lock files
-pnpm-lock.yaml
-package-lock.json
-yarn.lock
-bun.lockb
-*.lock
+# Testing
+coverage
+.nyc_output
 
-# Environment files
+# Production builds
+dist
+build
+.next
+out
+*.local
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local env files
+.env*.local
 .env
-.env.*
-.env.local
-.env.production
-.env.development
-!.env.example
 
-# Build outputs
-dist/
-build/
-.next/
-out/
+# Vercel
+.vercel
 
-# Cache
-.cache/
-.turbo/
-.pnpm-debug.log
+# Expo
+.expo
+__generated__
+
+# Documentation generated files
+docs/book
+docs/src/*.md
+!docs/src/README.md
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Lock files (for monorepo we might want to commit pnpm-lock.yaml)
+# Uncomment if you want to ignore:
+# pnpm-lock.yaml
+# package-lock.json
+# yarn.lock
+# bun.lockb
+
+# Nix
+result
+result-*
+.direnv
+
+# Devbox
+.devbox

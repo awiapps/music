@@ -47,6 +47,10 @@
             git
             gh
 
+            # Documentation tools
+            mdbook
+            python312
+
             # Build tools
             gcc
             gnumake
@@ -74,6 +78,8 @@
             echo "  pnpm install       - Install all dependencies"
             echo "  pnpm dev:mobile    - Start mobile dev server"
             echo "  pnpm dev:api       - Start API server"
+            echo "  pnpm docs:gen      - Generate documentation"
+            echo "  pnpm docs:serve    - Serve documentation locally"
             echo "  pnpm clean         - Remove node_modules and lock files"
             echo "  pnpm fresh         - Clean and reinstall"
             echo ""
