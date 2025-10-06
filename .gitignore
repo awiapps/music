@@ -1,7 +1,29 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Lock files
 pnpm-lock.yaml
 package-lock.json
+yarn.lock
+bun.lockb
 *.lock
-*.env.*
+
+# Environment files
 .env
-.env.prod
-node_modules/
+.env.*
+.env.local
+.env.production
+.env.development
+!.env.example
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Cache
+.cache/
+.turbo/
+.pnpm-debug.log
