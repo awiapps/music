@@ -3,7 +3,7 @@
   "packages": [
     "nodejs@20",
     "pnpm@latest",
-    "yarn@latest",
+    "yarn@1.22.22",
     "go@latest",
     "gopls@latest",
     "elixir@latest",
