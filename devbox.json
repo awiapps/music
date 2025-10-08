@@ -3,7 +3,7 @@
   "packages": [
     "nodejs@20",
     "pnpm@latest",
-    "yarn@latest",
+    "yarn@1.22.22",
     "go@latest",
     "gopls@latest",
     "elixir@latest",
@@ -13,7 +13,7 @@
     "git@latest",
     "gh@latest",
     "mdbook@latest",
-    "python312@latest",
+    "python312@3.12.11",
     "gcc@latest",
     "gnumake@latest",
     "pkg-config@latest"
