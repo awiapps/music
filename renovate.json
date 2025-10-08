@@ -1,6 +1,131 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate configuration for AWMusic monorepo - aggressive daily updates",
   "extends": [
-    "config:recommended"
-  ]
+    "config:recommended",
+    ":maintainLockFilesWeekly",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":timezone(America/New_York)"
+  ],
+  "schedule": ["every day"],
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 5,
+  "automerge": false,
+  "platformAutomerge": false,
+  "rangeStrategy": "bump",
+  "separateMajorMinor": true,
+  "separateMinorPatch": false,
+  "packageRules": [
+    {
+      "description": "Group all non-major dependencies together",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    },
+    {
+      "description": "Auto-merge patch updates for low-risk dependencies",
+      "matchUpdateTypes": ["patch"],
+      "matchPackagePatterns": ["^@types/"],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "description": "Group Expo SDK packages",
+      "matchPackagePatterns": ["^expo", "^@expo/"],
+      "groupName": "Expo SDK",
+      "groupSlug": "expo-sdk"
+    },
+    {
+      "description": "Group React Native packages",
+      "matchPackagePatterns": ["^react-native"],
+      "groupName": "React Native",
+      "groupSlug": "react-native"
+    },
+    {
+      "description": "Group React packages",
+      "matchPackageNames": ["react", "react-dom"],
+      "groupName": "React Core",
+      "groupSlug": "react-core"
+    },
+    {
+      "description": "Group testing libraries",
+      "matchPackagePatterns": ["^@testing-library/", "^jest", "^@types/jest"],
+      "groupName": "Testing Libraries",
+      "groupSlug": "testing"
+    },
+    {
+      "description": "Group TypeScript and ESLint",
+      "matchPackagePatterns": [
+        "^typescript",
+        "^eslint",
+        "^@typescript-eslint/"
+      ],
+      "groupName": "TypeScript and Linting",
+      "groupSlug": "typescript-eslint"
+    },
+    {
+      "description": "Group Astro packages",
+      "matchPackagePatterns": ["^astro", "^@astrojs/"],
+      "groupName": "Astro",
+      "groupSlug": "astro"
+    },
+    {
+      "description": "Group Tauri packages",
+      "matchPackagePatterns": ["^@tauri-apps/"],
+      "groupName": "Tauri",
+      "groupSlug": "tauri"
+    },
+    {
+      "description": "Pin Node.js version",
+      "matchPackageNames": ["node"],
+      "enabled": false
+    },
+    {
+      "description": "Schedule major updates for Monday",
+      "matchUpdateTypes": ["major"],
+      "schedule": ["every monday"]
+    }
+  ],
+  "cargo": {
+    "enabled": true,
+    "rangeStrategy": "bump"
+  },
+  "dockerfile": {
+    "enabled": true
+  },
+  "github-actions": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "pr"
+  },
+  "regexManagers": [
+    {
+      "fileMatch": ["^flake\\.nix$"],
+      "matchStrings": ["nodejs\\s*=\\s*prev\\.nodejs-(?<currentValue>\\d+)_x"],
+      "depNameTemplate": "nodejs",
+      "datasourceTemplate": "node-version"
+    }
+  ],
+  "ignoreDeps": [],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
+    "automerge": true,
+    "schedule": ["at any time"]
+  },
+  "labels": ["dependencies", "renovate"],
+  "assignees": ["awfixer"],
+  "reviewers": ["awfixer"],
+  "timezone": "America/New_York",
+  "commitMessagePrefix": "chore(deps):",
+  "commitMessageAction": "update",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": "to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+  "prTitle": "{{commitMessagePrefix}} {{commitMessageAction}} {{commitMessageTopic}} {{commitMessageExtra}}",
+  "prBodyTemplate": "{{{header}}}{{{notes}}}{{{changelogs}}}{{{configDescription}}}{{{upgrades}}}{{{footer}}}",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 4am on monday"]
+  }
 }
