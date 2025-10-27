@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@tauri-apps/api':
         specifier: ^2
-        version: 2.8.0
+        version: 2.9.0
       '@tauri-apps/plugin-opener':
         specifier: ^2
-        version: 2.5.0
+        version: 2.5.1
       react:
         specifier: ^19.1.0
         version: 19.2.0
@@ -23,22 +23,22 @@ importers:
     devDependencies:
       '@tauri-apps/cli':
         specifier: ^2
-        version: 2.8.4
+        version: 2.9.1
       '@types/react':
         specifier: ^19.1.8
-        version: 19.2.0
+        version: 19.2.2
       '@types/react-dom':
         specifier: ^19.1.6
-        version: 19.2.0(@types/react@19.2.0)
+        version: 19.2.2(@types/react@19.2.2)
       '@vitejs/plugin-react':
-        specifier: ^4.6.0
-        version: 4.7.0(vite@7.1.9)
+        specifier: ^5.1.0
+        version: 5.1.0(vite@7.1.12)
       typescript:
         specifier: ~5.8.3
         version: 5.8.3
       vite:
         specifier: ^7.0.4
-        version: 7.1.9
+        version: 7.1.12
 
 packages:
 
@@ -46,16 +46,16 @@ packages:
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/compat-data@7.28.4':
-    resolution: {integrity: sha512-YsmSKC29MJwf0gF8Rjjrg5LQCmyh+j/nD8/eP7f+BeoQTKYqs9RoWbjGOdy0+1Ekr68RJZMUOPVQaQisnIo4Rw==}
+  '@babel/compat-data@7.28.5':
+    resolution: {integrity: sha512-6uFXyCayocRbqhZOB+6XcuZbkMNimwfVGFji8CTZnCzOHVGvDqzvitu1re2AU5LROliz7eQPhB8CpAMvnx9EjA==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/core@7.28.4':
-    resolution: {integrity: sha512-2BCOP7TN8M+gVDj7/ht3hsaO/B/n5oDbiAyyvnRlNOs+u1o+JWNYTQrmpuNp1/Wq2gcFrI01JAW+paEKDMx/CA==}
+  '@babel/core@7.28.5':
+    resolution: {integrity: sha512-e7jT4DxYvIDLk1ZHmU/m/mB19rex9sv0c2ftBtjSBv+kVM/902eh0fINUzD7UwLLNR+jU585GxUJ8/EBfAM5fw==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/generator@7.28.3':
-    resolution: {integrity: sha512-3lSpxGgvnmZznmBkCRnVREPUFJv2wrv9iAoFDvADJc0ypmdOxdUtcLeBgBJ6zE0PMeTKnxeQzyk0xTBq4Ep7zw==}
+  '@babel/generator@7.28.5':
+    resolution: {integrity: sha512-3EwLFhZ38J4VyIP6WNtt2kUdW9dokXA9Cr4IVIFHuCpZ3H8/YFOl5JjZHisrn1fATPBmKKqXzDFvh9fUwHz6CQ==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-compilation-targets@7.27.2':
@@ -84,8 +84,8 @@ packages:
     resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/helper-validator-identifier@7.27.1':
-    resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
+  '@babel/helper-validator-identifier@7.28.5':
+    resolution: {integrity: sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-option@7.27.1':
@@ -96,8 +96,8 @@ packages:
     resolution: {integrity: sha512-HFN59MmQXGHVyYadKLVumYsA9dBFun/ldYxipEjzA4196jpLZd8UjEEBLkbEkvfYreDqJhZxYAWFPtrfhNpj4w==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/parser@7.28.4':
-    resolution: {integrity: sha512-yZbBqeM6TkpP9du/I2pUZnJsRMGGvOuIrhjzC1AwHwW+6he4mni6Bp/m8ijn0iOuZuPI2BfkCoSRunpyjnrQKg==}
+  '@babel/parser@7.28.5':
+    resolution: {integrity: sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -117,12 +117,12 @@ packages:
     resolution: {integrity: sha512-LPDZ85aEJyYSd18/DkjNh4/y1ntkE5KwUHWTiqgRxruuZL2F1yuHligVHLvcHY2vMHXttKFpJn6LwfI7cw7ODw==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/traverse@7.28.4':
-    resolution: {integrity: sha512-YEzuboP2qvQavAcjgQNVgsvHIDv6ZpwXvcvjmyySP2DIMuByS/6ioU5G9pYrWHM6T2YDfc7xga9iNzYOs12CFQ==}
+  '@babel/traverse@7.28.5':
+    resolution: {integrity: sha512-TCCj4t55U90khlYkVV/0TfkJkAkUg3jZFA3Neb7unZT8CPok7iiRfaX0F+WnqWqt7OxhOn0uBKXCw4lbL8W0aQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/types@7.28.4':
-    resolution: {integrity: sha512-bkFqkLhh3pMBUQQkpVgWDWq/lqzc2678eUyDlTBhRqhCHFguYYGM0Efga7tYk4TogG/3x0EEl66/OQ+WGbWB/Q==}
+  '@babel/types@7.28.5':
+    resolution: {integrity: sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA==}
     engines: {node: '>=6.9.0'}
 
   '@esbuild/aix-ppc64@0.25.10':
@@ -297,8 +297,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@rolldown/pluginutils@1.0.0-beta.27':
-    resolution: {integrity: sha512-+d0F4MKMCbeVUJwG96uQ4SgAznZNSq93I3V+9NHA4OpvqG8mRCpGdKmK8l/dl02h2CCDHwW2FqilnTyDcAnqjA==}
+  '@rolldown/pluginutils@1.0.0-beta.43':
+    resolution: {integrity: sha512-5Uxg7fQUCmfhax7FJke2+8B6cqgeUJUD9o2uXIKXhD+mG0mL6NObmVoi9wXEU1tY89mZKgAYA6fTbftx3q2ZPQ==}
 
   '@rollup/rollup-android-arm-eabi@4.52.4':
     resolution: {integrity: sha512-BTm2qKNnWIQ5auf4deoetINJm2JzvihvGb9R6K/ETwKLql/Bb3Eg2H1FBp1gUb4YGbydMA3jcmQTR73q7J+GAA==}
@@ -410,82 +410,82 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@tauri-apps/api@2.8.0':
-    resolution: {integrity: sha512-ga7zdhbS2GXOMTIZRT0mYjKJtR9fivsXzsyq5U3vjDL0s6DTMwYRm0UHNjzTY5dh4+LSC68Sm/7WEiimbQNYlw==}
+  '@tauri-apps/api@2.9.0':
+    resolution: {integrity: sha512-qD5tMjh7utwBk9/5PrTA/aGr3i5QaJ/Mlt7p8NilQ45WgbifUNPyKWsA63iQ8YfQq6R8ajMapU+/Q8nMcPRLNw==}
 
-  '@tauri-apps/cli-darwin-arm64@2.8.4':
-    resolution: {integrity: sha512-BKu8HRkYV01SMTa7r4fLx+wjgtRK8Vep7lmBdHDioP6b8XH3q2KgsAyPWfEZaZIkZ2LY4SqqGARaE9oilNe0oA==}
+  '@tauri-apps/cli-darwin-arm64@2.9.1':
+    resolution: {integrity: sha512-sdwhtsE/6njD0AjgfYEj1JyxZH4SBmCJSXpRm6Ph5fQeuZD6MyjzjdVOrrtFguyREVQ7xn0Ujkwvbo01ULthNg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@tauri-apps/cli-darwin-x64@2.8.4':
-    resolution: {integrity: sha512-imb9PfSd/7G6VAO7v1bQ2A3ZH4NOCbhGJFLchxzepGcXf9NKkfun157JH9mko29K6sqAwuJ88qtzbKCbWJTH9g==}
+  '@tauri-apps/cli-darwin-x64@2.9.1':
+    resolution: {integrity: sha512-c86g+67wTdI4TUCD7CaSd/13+oYuLQxVST4ZNJ5C+6i1kdnU3Us1L68N9MvbDLDQGJc9eo0pvuK6sCWkee+BzA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@tauri-apps/cli-linux-arm-gnueabihf@2.8.4':
-    resolution: {integrity: sha512-Ml215UnDdl7/fpOrF1CNovym/KjtUbCuPgrcZ4IhqUCnhZdXuphud/JT3E8X97Y03TZ40Sjz8raXYI2ET0exzw==}
+  '@tauri-apps/cli-linux-arm-gnueabihf@2.9.1':
+    resolution: {integrity: sha512-IrB3gFQmueQKJjjisOcMktW/Gh6gxgqYO419doA3YZ7yIV5rbE8ZW52Q3I4AO+SlFEyVYer5kpi066p0JBlLGw==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
 
-  '@tauri-apps/cli-linux-arm64-gnu@2.8.4':
-    resolution: {integrity: sha512-pbcgBpMyI90C83CxE5REZ9ODyIlmmAPkkJXtV398X3SgZEIYy5TACYqlyyv2z5yKgD8F8WH4/2fek7+jH+ZXAw==}
+  '@tauri-apps/cli-linux-arm64-gnu@2.9.1':
+    resolution: {integrity: sha512-Ke7TyXvu6HbWSkmVkFbbH19D3cLsd117YtXP/u9NIvSpYwKeFtnbpirrIUfPm44Q+PZFZ2Hvg8X9qoUiAK0zKw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@tauri-apps/cli-linux-arm64-musl@2.8.4':
-    resolution: {integrity: sha512-zumFeaU1Ws5Ay872FTyIm7z8kfzEHu8NcIn8M6TxbJs0a7GRV21KBdpW1zNj2qy7HynnpQCqjAYXTUUmm9JAOw==}
+  '@tauri-apps/cli-linux-arm64-musl@2.9.1':
+    resolution: {integrity: sha512-sGvy75sv55oeMulR5ArwPD28DsDQxqTzLhXCrpU9/nbFg/JImmI7k994YE9fr3V0qE3Cjk5gjLldRNv7I9sjwQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@tauri-apps/cli-linux-riscv64-gnu@2.8.4':
-    resolution: {integrity: sha512-qiqbB3Zz6IyO201f+1ojxLj65WYj8mixL5cOMo63nlg8CIzsP23cPYUrx1YaDPsCLszKZo7tVs14pc7BWf+/aQ==}
+  '@tauri-apps/cli-linux-riscv64-gnu@2.9.1':
+    resolution: {integrity: sha512-tEKbJydV3BdIxpAx8aGHW6VDg1xW4LlQuRD/QeFZdZNTreHJpMbJEcdvAcI+Hg6vgQpVpaoEldR9W4F6dYSLqQ==}
     engines: {node: '>= 10'}
     cpu: [riscv64]
     os: [linux]
 
-  '@tauri-apps/cli-linux-x64-gnu@2.8.4':
-    resolution: {integrity: sha512-TaqaDd9Oy6k45Hotx3pOf+pkbsxLaApv4rGd9mLuRM1k6YS/aw81YrsMryYPThrxrScEIUcmNIHaHsLiU4GMkw==}
+  '@tauri-apps/cli-linux-x64-gnu@2.9.1':
+    resolution: {integrity: sha512-mg5msXHagtHpyCVWgI01M26JeSrgE/otWyGdYcuTwyRYZYEJRTbcNt7hscOkdNlPBe7isScW7PVKbxmAjJJl4g==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@tauri-apps/cli-linux-x64-musl@2.8.4':
-    resolution: {integrity: sha512-ot9STAwyezN8w+bBHZ+bqSQIJ0qPZFlz/AyscpGqB/JnJQVDFQcRDmUPFEaAtt2UUHSWzN3GoTJ5ypqLBp2WQA==}
+  '@tauri-apps/cli-linux-x64-musl@2.9.1':
+    resolution: {integrity: sha512-lFZEXkpDreUe3zKilvnMsrnKP9gwQudaEjDnOz/GMzbzNceIuPfFZz0cR/ky1Aoq4eSvZonPKHhROq4owz4fzg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@tauri-apps/cli-win32-arm64-msvc@2.8.4':
-    resolution: {integrity: sha512-+2aJ/g90dhLiOLFSD1PbElXX3SoMdpO7HFPAZB+xot3CWlAZD1tReUFy7xe0L5GAR16ZmrxpIDM9v9gn5xRy/w==}
+  '@tauri-apps/cli-win32-arm64-msvc@2.9.1':
+    resolution: {integrity: sha512-ejc5RAp/Lm1Aj0EQHaT+Wdt5PHfdgQV5hIDV00MV6HNbIb5W4ZUFxMDaRkAg65gl9MvY2fH396riePW3RoKXDw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@tauri-apps/cli-win32-ia32-msvc@2.8.4':
-    resolution: {integrity: sha512-yj7WDxkL1t9Uzr2gufQ1Hl7hrHuFKTNEOyascbc109EoiAqCp0tgZ2IykQqOZmZOHU884UAWI1pVMqBhS/BfhA==}
+  '@tauri-apps/cli-win32-ia32-msvc@2.9.1':
+    resolution: {integrity: sha512-fSATtJDc0fNjVB6ystyi8NbwhNFk8i8E05h6KrsC8Fio5eaJIJvPCbC9pdrPl6kkxN1X7fj25ErBbgfqgcK8Fg==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@tauri-apps/cli-win32-x64-msvc@2.8.4':
-    resolution: {integrity: sha512-XuvGB4ehBdd7QhMZ9qbj/8icGEatDuBNxyYHbLKsTYh90ggUlPa/AtaqcC1Fo69lGkTmq9BOKrs1aWSi7xDonA==}
+  '@tauri-apps/cli-win32-x64-msvc@2.9.1':
+    resolution: {integrity: sha512-/JHlOzpUDhjBOO9w167bcYxfJbcMQv7ykS/Y07xjtcga8np0rzUzVGWYmLMH7orKcDMC7wjhheEW1x8cbGma/Q==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@tauri-apps/cli@2.8.4':
-    resolution: {integrity: sha512-ejUZBzuQRcjFV+v/gdj/DcbyX/6T4unZQjMSBZwLzP/CymEjKcc2+Fc8xTORThebHDUvqoXMdsCZt8r+hyN15g==}
+  '@tauri-apps/cli@2.9.1':
+    resolution: {integrity: sha512-kKi2/WWsNXKoMdatBl4xrT7e1Ce27JvsetBVfWuIb6D3ep/Y0WO5SIr70yarXOSWam8NyDur4ipzjZkg6m7VDg==}
     engines: {node: '>= 10'}
     hasBin: true
 
-  '@tauri-apps/plugin-opener@2.5.0':
-    resolution: {integrity: sha512-B0LShOYae4CZjN8leiNDbnfjSrTwoZakqKaWpfoH6nXiJwt6Rgj6RnVIffG3DoJiKsffRhMkjmBV9VeilSb4TA==}
+  '@tauri-apps/plugin-opener@2.5.1':
+    resolution: {integrity: sha512-nyT6oW4ibyXJN2duVBZlPhPmN/+jViOtX0B95f7j5W3R493wEyCNRgjL6YXUp7cB1pKKG6spk7/Q46ZKuzeeBQ==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -502,31 +502,31 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/react-dom@19.2.0':
-    resolution: {integrity: sha512-brtBs0MnE9SMx7px208g39lRmC5uHZs96caOJfTjFcYSLHNamvaSMfJNagChVNkup2SdtOxKX1FDBkRSJe1ZAg==}
+  '@types/react-dom@19.2.2':
+    resolution: {integrity: sha512-9KQPoO6mZCi7jcIStSnlOWn2nEF3mNmyr3rIAsGnAbQKYbRLyqmeSc39EVgtxXVia+LMT8j3knZLAZAh+xLmrw==}
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.0':
-    resolution: {integrity: sha512-1LOH8xovvsKsCBq1wnT4ntDUdCJKmnEakhsuoUSy6ExlHCkGP2hqnatagYTgFk6oeL0VU31u7SNjunPN+GchtA==}
+  '@types/react@19.2.2':
+    resolution: {integrity: sha512-6mDvHUFSjyT2B2yeNx2nUgMxh9LtOWvkhIU3uePn2I2oyNymUAX1NIsdgviM4CH+JSrp2D2hsMvJOkxY+0wNRA==}
 
-  '@vitejs/plugin-react@4.7.0':
-    resolution: {integrity: sha512-gUu9hwfWvvEDBBmgtAowQCojwZmJ5mcLn3aufeCsitijs3+f2NsrPtlAWIR6OPiqljl96GVCUbLe0HyqIpVaoA==}
-    engines: {node: ^14.18.0 || >=16.0.0}
+  '@vitejs/plugin-react@5.1.0':
+    resolution: {integrity: sha512-4LuWrg7EKWgQaMJfnN+wcmbAW+VSsCmqGohftWjuct47bv8uE4n/nPpq4XjJPsxgq00GGG5J8dvBczp8uxScew==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
 
-  baseline-browser-mapping@2.8.12:
-    resolution: {integrity: sha512-vAPMQdnyKCBtkmQA6FMCBvU9qFIppS3nzyXnEM+Lo2IAhG4Mpjv9cCxMudhgV3YdNNJv6TNqXy97dfRVL2LmaQ==}
+  baseline-browser-mapping@2.8.20:
+    resolution: {integrity: sha512-JMWsdF+O8Orq3EMukbUN1QfbLK9mX2CkUmQBcW2T0s8OmdAUL5LLM/6wFwSrqXzlXB13yhyK9gTKS1rIizOduQ==}
     hasBin: true
 
-  browserslist@4.26.3:
-    resolution: {integrity: sha512-lAUU+02RFBuCKQPj/P6NgjlbCnLBMp4UtgTx7vNHd3XSIJF87s9a5rA3aH2yw3GS9DqZAUbOtZdCCiZeVRqt0w==}
+  browserslist@4.27.0:
+    resolution: {integrity: sha512-AXVQwdhot1eqLihwasPElhX2tAZiBjWdJ9i/Zcj2S6QYIjkx62OKSfnobkriB81C3l4w0rVy3Nt4jaTBltYEpw==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
-  caniuse-lite@1.0.30001748:
-    resolution: {integrity: sha512-5P5UgAr0+aBmNiplks08JLw+AW/XG/SurlgZLgB1dDLfAw7EfRGxIwzPHxdSCGY/BTKDqIVyJL87cCN6s0ZR0w==}
+  caniuse-lite@1.0.30001751:
+    resolution: {integrity: sha512-A0QJhug0Ly64Ii3eIqHu5X51ebln3k4yTUkY1j8drqpWHVreg/VLijN48cZ1bYPiqOQuqpkIKnzr/Ul8V+p6Cw==}
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -543,8 +543,8 @@ packages:
       supports-color:
         optional: true
 
-  electron-to-chromium@1.5.230:
-    resolution: {integrity: sha512-A6A6Fd3+gMdaed9wX83CvHYJb4UuapPD5X5SLq72VZJzxHSY0/LUweGXRWmQlh2ln7KV7iw7jnwXK7dlPoOnHQ==}
+  electron-to-chromium@1.5.240:
+    resolution: {integrity: sha512-OBwbZjWgrCOH+g6uJsA2/7Twpas2OlepS9uvByJjR2datRDuKGYeD+nP8lBBks2qnB7bGJNHDUx7c/YLaT3QMQ==}
 
   esbuild@0.25.10:
     resolution: {integrity: sha512-9RiGKvCwaqxO2owP61uQ4BgNborAQskMR6QusfWzQqv7AZOg5oGehdY2pRJMTKuwxd1IDBP4rSbI5lHzU7SMsQ==}
@@ -597,8 +597,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  node-releases@2.0.23:
-    resolution: {integrity: sha512-cCmFDMSm26S6tQSDpBCg/NR8NENrVPhAJSf+XbxBG4rPFaaonlEoE9wHQmun+cls499TQGSb7ZyPBRlzgKfpeg==}
+  node-releases@2.0.26:
+    resolution: {integrity: sha512-S2M9YimhSjBSvYnlr5/+umAnPHE++ODwt5e2Ij6FoX45HA/s4vHdkDx1eax2pAPeAOqu4s9b7ppahsyEFdVqQA==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -616,8 +616,8 @@ packages:
     peerDependencies:
       react: ^19.2.0
 
-  react-refresh@0.17.0:
-    resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
+  react-refresh@0.18.0:
+    resolution: {integrity: sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==}
     engines: {node: '>=0.10.0'}
 
   react@19.2.0:
@@ -649,14 +649,14 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  update-browserslist-db@1.1.3:
-    resolution: {integrity: sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==}
+  update-browserslist-db@1.1.4:
+    resolution: {integrity: sha512-q0SPT4xyU84saUX+tomz1WLkxUbuaJnR1xWt17M7fJtEJigJeWUNGUqrauFXsHnqev9y9JTRGwk13tFBuKby4A==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  vite@7.1.9:
-    resolution: {integrity: sha512-4nVGliEpxmhCL8DslSAUdxlB6+SMrhB0a1v5ijlh1xB1nEPuy1mxaHxysVucLHuWryAxLWg6a5ei+U4TLn/rFg==}
+  vite@7.1.12:
+    resolution: {integrity: sha512-ZWyE8YXEXqJrrSLvYgrRP7p62OziLW7xI5HYGWFzOvupfAlrLvURSzv/FyGyy0eidogEM3ujU+kUG1zuHgb6Ug==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -702,23 +702,23 @@ snapshots:
 
   '@babel/code-frame@7.27.1':
     dependencies:
-      '@babel/helper-validator-identifier': 7.27.1
+      '@babel/helper-validator-identifier': 7.28.5
       js-tokens: 4.0.0
       picocolors: 1.1.1
 
-  '@babel/compat-data@7.28.4': {}
+  '@babel/compat-data@7.28.5': {}
 
-  '@babel/core@7.28.4':
+  '@babel/core@7.28.5':
     dependencies:
       '@babel/code-frame': 7.27.1
-      '@babel/generator': 7.28.3
+      '@babel/generator': 7.28.5
       '@babel/helper-compilation-targets': 7.27.2
-      '@babel/helper-module-transforms': 7.28.3(@babel/core@7.28.4)
+      '@babel/helper-module-transforms': 7.28.3(@babel/core@7.28.5)
       '@babel/helpers': 7.28.4
-      '@babel/parser': 7.28.4
+      '@babel/parser': 7.28.5
       '@babel/template': 7.27.2
-      '@babel/traverse': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/traverse': 7.28.5
+      '@babel/types': 7.28.5
       '@jridgewell/remapping': 2.3.5
       convert-source-map: 2.0.0
       debug: 4.4.3
@@ -728,19 +728,19 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/generator@7.28.3':
+  '@babel/generator@7.28.5':
     dependencies:
-      '@babel/parser': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/parser': 7.28.5
+      '@babel/types': 7.28.5
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
       jsesc: 3.1.0
 
   '@babel/helper-compilation-targets@7.27.2':
     dependencies:
-      '@babel/compat-data': 7.28.4
+      '@babel/compat-data': 7.28.5
       '@babel/helper-validator-option': 7.27.1
-      browserslist: 4.26.3
+      browserslist: 4.27.0
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -748,17 +748,17 @@ snapshots:
 
   '@babel/helper-module-imports@7.27.1':
     dependencies:
-      '@babel/traverse': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/traverse': 7.28.5
+      '@babel/types': 7.28.5
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.28.3(@babel/core@7.28.4)':
+  '@babel/helper-module-transforms@7.28.3(@babel/core@7.28.5)':
     dependencies:
-      '@babel/core': 7.28.4
+      '@babel/core': 7.28.5
       '@babel/helper-module-imports': 7.27.1
-      '@babel/helper-validator-identifier': 7.27.1
-      '@babel/traverse': 7.28.4
+      '@babel/helper-validator-identifier': 7.28.5
+      '@babel/traverse': 7.28.5
     transitivePeerDependencies:
       - supports-color
 
@@ -766,51 +766,51 @@ snapshots:
 
   '@babel/helper-string-parser@7.27.1': {}
 
-  '@babel/helper-validator-identifier@7.27.1': {}
+  '@babel/helper-validator-identifier@7.28.5': {}
 
   '@babel/helper-validator-option@7.27.1': {}
 
   '@babel/helpers@7.28.4':
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
-  '@babel/parser@7.28.4':
+  '@babel/parser@7.28.5':
     dependencies:
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
-  '@babel/plugin-transform-react-jsx-self@7.27.1(@babel/core@7.28.4)':
+  '@babel/plugin-transform-react-jsx-self@7.27.1(@babel/core@7.28.5)':
     dependencies:
-      '@babel/core': 7.28.4
+      '@babel/core': 7.28.5
       '@babel/helper-plugin-utils': 7.27.1
 
-  '@babel/plugin-transform-react-jsx-source@7.27.1(@babel/core@7.28.4)':
+  '@babel/plugin-transform-react-jsx-source@7.27.1(@babel/core@7.28.5)':
     dependencies:
-      '@babel/core': 7.28.4
+      '@babel/core': 7.28.5
       '@babel/helper-plugin-utils': 7.27.1
 
   '@babel/template@7.27.2':
     dependencies:
       '@babel/code-frame': 7.27.1
-      '@babel/parser': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/parser': 7.28.5
+      '@babel/types': 7.28.5
 
-  '@babel/traverse@7.28.4':
+  '@babel/traverse@7.28.5':
     dependencies:
       '@babel/code-frame': 7.27.1
-      '@babel/generator': 7.28.3
+      '@babel/generator': 7.28.5
       '@babel/helper-globals': 7.28.0
-      '@babel/parser': 7.28.4
+      '@babel/parser': 7.28.5
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/types@7.28.4':
+  '@babel/types@7.28.5':
     dependencies:
       '@babel/helper-string-parser': 7.27.1
-      '@babel/helper-validator-identifier': 7.27.1
+      '@babel/helper-validator-identifier': 7.28.5
 
   '@esbuild/aix-ppc64@0.25.10':
     optional: true
@@ -909,7 +909,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@rolldown/pluginutils@1.0.0-beta.27': {}
+  '@rolldown/pluginutils@1.0.0-beta.43': {}
 
   '@rollup/rollup-android-arm-eabi@4.52.4':
     optional: true
@@ -977,113 +977,113 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.52.4':
     optional: true
 
-  '@tauri-apps/api@2.8.0': {}
+  '@tauri-apps/api@2.9.0': {}
 
-  '@tauri-apps/cli-darwin-arm64@2.8.4':
+  '@tauri-apps/cli-darwin-arm64@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-darwin-x64@2.8.4':
+  '@tauri-apps/cli-darwin-x64@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-linux-arm-gnueabihf@2.8.4':
+  '@tauri-apps/cli-linux-arm-gnueabihf@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-linux-arm64-gnu@2.8.4':
+  '@tauri-apps/cli-linux-arm64-gnu@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-linux-arm64-musl@2.8.4':
+  '@tauri-apps/cli-linux-arm64-musl@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-linux-riscv64-gnu@2.8.4':
+  '@tauri-apps/cli-linux-riscv64-gnu@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-linux-x64-gnu@2.8.4':
+  '@tauri-apps/cli-linux-x64-gnu@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-linux-x64-musl@2.8.4':
+  '@tauri-apps/cli-linux-x64-musl@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-win32-arm64-msvc@2.8.4':
+  '@tauri-apps/cli-win32-arm64-msvc@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-win32-ia32-msvc@2.8.4':
+  '@tauri-apps/cli-win32-ia32-msvc@2.9.1':
     optional: true
 
-  '@tauri-apps/cli-win32-x64-msvc@2.8.4':
+  '@tauri-apps/cli-win32-x64-msvc@2.9.1':
     optional: true
 
-  '@tauri-apps/cli@2.8.4':
+  '@tauri-apps/cli@2.9.1':
     optionalDependencies:
-      '@tauri-apps/cli-darwin-arm64': 2.8.4
-      '@tauri-apps/cli-darwin-x64': 2.8.4
-      '@tauri-apps/cli-linux-arm-gnueabihf': 2.8.4
-      '@tauri-apps/cli-linux-arm64-gnu': 2.8.4
-      '@tauri-apps/cli-linux-arm64-musl': 2.8.4
-      '@tauri-apps/cli-linux-riscv64-gnu': 2.8.4
-      '@tauri-apps/cli-linux-x64-gnu': 2.8.4
-      '@tauri-apps/cli-linux-x64-musl': 2.8.4
-      '@tauri-apps/cli-win32-arm64-msvc': 2.8.4
-      '@tauri-apps/cli-win32-ia32-msvc': 2.8.4
-      '@tauri-apps/cli-win32-x64-msvc': 2.8.4
+      '@tauri-apps/cli-darwin-arm64': 2.9.1
+      '@tauri-apps/cli-darwin-x64': 2.9.1
+      '@tauri-apps/cli-linux-arm-gnueabihf': 2.9.1
+      '@tauri-apps/cli-linux-arm64-gnu': 2.9.1
+      '@tauri-apps/cli-linux-arm64-musl': 2.9.1
+      '@tauri-apps/cli-linux-riscv64-gnu': 2.9.1
+      '@tauri-apps/cli-linux-x64-gnu': 2.9.1
+      '@tauri-apps/cli-linux-x64-musl': 2.9.1
+      '@tauri-apps/cli-win32-arm64-msvc': 2.9.1
+      '@tauri-apps/cli-win32-ia32-msvc': 2.9.1
+      '@tauri-apps/cli-win32-x64-msvc': 2.9.1
 
-  '@tauri-apps/plugin-opener@2.5.0':
+  '@tauri-apps/plugin-opener@2.5.1':
     dependencies:
-      '@tauri-apps/api': 2.8.0
+      '@tauri-apps/api': 2.9.0
 
   '@types/babel__core@7.20.5':
     dependencies:
-      '@babel/parser': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/parser': 7.28.5
+      '@babel/types': 7.28.5
       '@types/babel__generator': 7.27.0
       '@types/babel__template': 7.4.4
       '@types/babel__traverse': 7.28.0
 
   '@types/babel__generator@7.27.0':
     dependencies:
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
   '@types/babel__template@7.4.4':
     dependencies:
-      '@babel/parser': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/parser': 7.28.5
+      '@babel/types': 7.28.5
 
   '@types/babel__traverse@7.28.0':
     dependencies:
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
   '@types/estree@1.0.8': {}
 
-  '@types/react-dom@19.2.0(@types/react@19.2.0)':
+  '@types/react-dom@19.2.2(@types/react@19.2.2)':
     dependencies:
-      '@types/react': 19.2.0
+      '@types/react': 19.2.2
 
-  '@types/react@19.2.0':
+  '@types/react@19.2.2':
     dependencies:
       csstype: 3.1.3
 
-  '@vitejs/plugin-react@4.7.0(vite@7.1.9)':
+  '@vitejs/plugin-react@5.1.0(vite@7.1.12)':
     dependencies:
-      '@babel/core': 7.28.4
-      '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.4)
-      '@babel/plugin-transform-react-jsx-source': 7.27.1(@babel/core@7.28.4)
-      '@rolldown/pluginutils': 1.0.0-beta.27
+      '@babel/core': 7.28.5
+      '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.5)
+      '@babel/plugin-transform-react-jsx-source': 7.27.1(@babel/core@7.28.5)
+      '@rolldown/pluginutils': 1.0.0-beta.43
       '@types/babel__core': 7.20.5
-      react-refresh: 0.17.0
-      vite: 7.1.9
+      react-refresh: 0.18.0
+      vite: 7.1.12
     transitivePeerDependencies:
       - supports-color
 
-  baseline-browser-mapping@2.8.12: {}
+  baseline-browser-mapping@2.8.20: {}
 
-  browserslist@4.26.3:
+  browserslist@4.27.0:
     dependencies:
-      baseline-browser-mapping: 2.8.12
-      caniuse-lite: 1.0.30001748
-      electron-to-chromium: 1.5.230
-      node-releases: 2.0.23
-      update-browserslist-db: 1.1.3(browserslist@4.26.3)
+      baseline-browser-mapping: 2.8.20
+      caniuse-lite: 1.0.30001751
+      electron-to-chromium: 1.5.240
+      node-releases: 2.0.26
+      update-browserslist-db: 1.1.4(browserslist@4.27.0)
 
-  caniuse-lite@1.0.30001748: {}
+  caniuse-lite@1.0.30001751: {}
 
   convert-source-map@2.0.0: {}
 
@@ -1093,7 +1093,7 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  electron-to-chromium@1.5.230: {}
+  electron-to-chromium@1.5.240: {}
 
   esbuild@0.25.10:
     optionalDependencies:
@@ -1149,7 +1149,7 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  node-releases@2.0.23: {}
+  node-releases@2.0.26: {}
 
   picocolors@1.1.1: {}
 
@@ -1166,7 +1166,7 @@ snapshots:
       react: 19.2.0
       scheduler: 0.27.0
 
-  react-refresh@0.17.0: {}
+  react-refresh@0.18.0: {}
 
   react@19.2.0: {}
 
@@ -1211,13 +1211,13 @@ snapshots:
 
   typescript@5.8.3: {}
 
-  update-browserslist-db@1.1.3(browserslist@4.26.3):
+  update-browserslist-db@1.1.4(browserslist@4.27.0):
     dependencies:
-      browserslist: 4.26.3
+      browserslist: 4.27.0
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  vite@7.1.9:
+  vite@7.1.12:
     dependencies:
       esbuild: 0.25.10
       fdir: 6.5.0(picomatch@4.0.3)
